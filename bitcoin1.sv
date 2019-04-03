@@ -23,18 +23,8 @@ parameter int k[0:63] = '{
 assign mem_clk = clk;
 
 // variable declarations
-
 logic   [31:0] H0, H1, H2, H3, H4, H5, H6, H7;
 logic   [31:0] fH0, fH1, fH2, fH3, fH4, fH5, fH6, fH7;
-
-//logic [31:0] h0_n[NONCES];
-//logic [31:0] h1_n[NONCES];
-//logic [31:0] h2_n[NONCES];
-//logic [31:0] h3_n[NONCES];
-//logic [31:0] h4_n[NONCES];
-//logic [31:0] h5_n[NONCES];
-//logic [31:0] h6_n[NONCES];
-//logic [31:0] h7_n[NONCES];
 
 logic   [31:0] a, b, c, d, e, f, g, h;
 
@@ -244,25 +234,7 @@ always_ff @(posedge mem_clk, negedge reset_n) begin
 		t <= t + 1;
 		
 		if(t == 64) begin
-//			fH0 <= a + fH0;
-//			fH1 <= b + fH1;
-//			fH2 <= c + fH2;
-//			fH3 <= d + fH3;
-//			fH4 <= e + fH4;
-//			fH5 <= f + fH5;
-//			fH6 <= g + fH6;
-//			fH7 <= h + fH7;
-			
 			t <= 0;
-			
-//			a <= a + fH0;
-//			b <= b + fH1;
-//			c <= c + fH2;
-//			d <= d + fH3;
-//			e <= e + fH4;
-//			f <= f + fH5;
-//			g <= g + fH6;
-//			h <= h + fH7;
 			
 			H0 <= 32'h6a09e667;
 			H1 <= 32'hbb67ae85;
