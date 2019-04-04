@@ -303,6 +303,8 @@ always_ff @(posedge mem_clk, negedge reset_n) begin
 	end
 	WRITE: begin
 		// code
+		// the testbench only cares for the first word of each hash; the commented
+		// code afterwards returns the full hash
 		mem_addr <= output_addr + nonce[15:0] + n;//n + nonce[15:0]*15'd8;
 		
 		if(n == 0) begin
