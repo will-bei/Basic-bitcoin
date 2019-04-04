@@ -4,7 +4,8 @@ bitcoin1.sv is the code for a minimum area*delay submission, while bitcoin2.sv a
 the code for a min delay only design.
 
 The respective testbenches, tb_bitcoin1_hash.sv and tb_bitcoin2_hash.sv, are slightly-
-modified from a testbench originally written by Prof. Bill Lin.
+modified from a testbench originally written by Prof. Bill Lin. The testbenches only
+differ in instantiation of the bitcoin hashing modules; they are otherwise identical.
 
 Specifically, bitcoin1.sv contains the code for a sequential bitcoin hash. Nonces are
 processed one-by-one.
