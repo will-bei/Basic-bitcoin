@@ -11,3 +11,9 @@ processed one-by-one.
 
 bitcoin2.sv contains the code for parallel hash computation. 16 sha-256 processes are
 simultaneously run to calculate 16 nonces at once.
+
+Folders contain fitter and static timing analysis reports for the two designs.
+
+bitcoin1.sv completes the testbench in 2373 cycles.
+
+bitcoin2.sv completes the testbench in 236 cycles.
